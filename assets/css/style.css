@@ -22,6 +22,15 @@ body {
     float: right !important;
 }
 
+.active {
+    color: #e7a63b !important;
+}
+
+.active-tab {
+    color: #fff !important;
+    background-color: #e7a63b !important;
+}
+
 header {
     width: 100%;
     height: 185px;
@@ -205,11 +214,6 @@ header {
     color: #e7a63b;
 }
 
-.active {
-    color: #e7a63b;
-}
-
-
 .logo_center {
     height: 120px;
     position: relative;
@@ -351,19 +355,163 @@ header {
 
 .menu_today{
     width: 100%;
-    height: 910px;
+    height: 1200px;
     background-color: #f4f3ea;
 }
 
-.heding_menu {
+.row-menu {
+    position: relative;
+}
 
+.heading_menu {
+    padding: 70px;
 }
 
 .heading_menu .large_title {
     text-align: center;
+    padding-bottom: 30px;
+
 }
 
 .heading_menu .mini_title{
     text-align: center;
 }
 
+.tab_link_module {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.clearfix {
+    text-align: center;
+    height: 100%;
+}
+
+.nav-tabs {
+    display: inline-block;
+}
+
+.nav-tabs li {
+    display: inline-block;
+    margin: 15px;
+
+}
+
+.nav-tabs li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    border: 2px solid #e4ddd0;
+    border-radius: 50px;
+    padding: 18px 20px;
+}
+
+.tabs-content{
+    margin-top: 40px;
+}
+
+.tab-content1-left {
+    width:50%;
+    display: inline-block;
+}
+
+.list-products li {
+    list-style: none;
+    margin: 50px 0;
+    height: 115px;
+}
+
+.list-products li a {
+    text-decoration: none;
+}
+
+.product-img {
+    display: inline-block;
+    margin-right: 20px ;
+}
+
+.product-img a img {
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width: 90px;
+    height: 90px;
+}
+
+.product-info {
+    display: inline-block;
+    width: 500px;
+    height: 100%;
+    position: relative;
+    bottom: 15px;
+}
+
+.product-info::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: dashed 1px #252525;
+    top: 21px;
+    left: 0%;
+}
+
+.product-info-top {
+    height: 50%;
+}
+
+.name {
+    float: left;
+}
+
+.name a {
+    font-size: 25px;
+    color: #000;
+    transition: color 0.5s;
+
+}
+
+.name a:hover {
+    color: #e7a63b;
+}
+
+.price {
+    float: right;
+    margin-top: 7px;
+}
+
+.price span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.summary_grid {
+    float: bottom;
+    font-size: 20px;
+    color: #464646;
+}
+
+.tab-content1-right {
+    width: 50%;
+    float: right;
+}
+
+.more {
+    left: 43%;
+    position: absolute;
+    bottom: 0;
+}
+
+.more-btn {
+    border: 1px solid #e4ddd0;
+    padding:20px 50px;
+    border-radius: 65px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.8s;
+}
+
+.more-btn:hover {
+    background-color: #e7a63b;
+}
