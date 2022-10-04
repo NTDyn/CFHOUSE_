@@ -28,14 +28,14 @@ body {
 
 .active-tab {
     color: #fff !important;
-    background-color: #e7a63b !important;
+    background-color: #e7b45a !important;
 }
 
 header {
     width: 100%;
     height: 185px;
     float: left;
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     z-index: 1;
@@ -244,7 +244,7 @@ header {
 /* Slider */
 
 .slider {
-    margin-top: 160px;
+
 }
 
 .home-slider::before, .home-slider::after {
@@ -355,7 +355,7 @@ header {
 
 .menu_today{
     width: 100%;
-    height: 1200px;
+    height: 1100px;
     background-color: #f4f3ea;
 }
 
@@ -364,7 +364,7 @@ header {
 }
 
 .heading_menu {
-    padding: 70px;
+    padding: 60px 0;
 }
 
 .heading_menu .large_title {
@@ -380,7 +380,7 @@ header {
 .tab_link_module {
     height: 100%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .clearfix {
@@ -402,7 +402,7 @@ header {
     text-decoration: none;
     font-size: 18px;
     color: #000;
-    border: 2px solid #e4ddd0;
+    border: 1px solid #e4ddd0;
     border-radius: 50px;
     padding: 18px 20px;
 }
@@ -418,7 +418,7 @@ header {
 
 .list-products li {
     list-style: none;
-    margin: 50px 0;
+    margin: 40px 0;
     height: 115px;
 }
 
@@ -447,21 +447,27 @@ header {
     bottom: 15px;
 }
 
-.product-info::after {
+.product-info::before {
     content: "";
     width: 100%;
     position: absolute;
     border-bottom: dashed 1px #252525;
-    top: 21px;
+    top: 41px;
     left: 0%;
 }
 
+
+
 .product-info-top {
     height: 50%;
+    position: relative;
+    top: 20px;
 }
 
 .name {
     float: left;
+    background-color: #f4f3ea;
+    padding-right: 10px ;
 }
 
 .name a {
@@ -478,6 +484,8 @@ header {
 .price {
     float: right;
     margin-top: 7px;
+    padding-left: 10px;
+    background-color: #f4f3ea;
 }
 
 .price span {
@@ -499,7 +507,7 @@ header {
 .more {
     left: 43%;
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
 }
 
 .more-btn {
@@ -509,9 +517,10 @@ header {
     font-size: 20px;
     text-decoration: none;
     color: #000;
-    transition: background-color 0.8s;
+    transition: all 0.6s;
 }
 
 .more-btn:hover {
-    background-color: #e7a63b;
+    background-color: #e7b45a;
+    color: #fff;
 }
