@@ -31,6 +31,10 @@ body {
     background-color: #e7b45a !important;
 }
 
+.dnone {
+    display: none !important;
+}
+
 header {
     width: 100%;
     height: 185px;
@@ -294,7 +298,9 @@ header {
     margin-bottom: 15px;
 }
 
-.large_title {
+.large_title,
+.title-gallery,
+.time-content-heading {
     font-size: 40px;
     color: #e7b45a;
     font-family: "Oswald", sans-serif;
@@ -355,7 +361,7 @@ header {
 
 .menu_today{
     width: 100%;
-    height: 1100px;
+    height: 1150px;
     background-color: #f4f3ea;
 }
 
@@ -363,14 +369,14 @@ header {
     position: relative;
 }
 
-.heading_menu {
+.heading_menu{
     padding: 60px 0;
 }
 
-.heading_menu .large_title {
+.heading_menu .large_title,
+.title-gallery {
     text-align: center;
     padding-bottom: 30px;
-
 }
 
 .heading_menu .mini_title{
@@ -395,16 +401,20 @@ header {
 .nav-tabs li {
     display: inline-block;
     margin: 15px;
-
 }
 
-.nav-tabs li a {
+.nav-tabs li button {
     text-decoration: none;
     font-size: 18px;
     color: #000;
     border: 1px solid #e4ddd0;
     border-radius: 50px;
     padding: 18px 20px;
+    background-color: #f4f3ea;
+}
+
+.nav-tabs li:hover button {
+    cursor: pointer;
 }
 
 .tabs-content{
@@ -523,4 +533,200 @@ header {
 .more-btn:hover {
     background-color: #e7b45a;
     color: #fff;
+}
+
+.gallery {
+    height: 856px;
+    padding: 90px 0;
+}
+
+.content-gallery {
+
+}
+
+.content-gallery-left {
+    display: inline-block;
+}
+
+.gallery-img-left{
+    width: 640x;
+    height: 640px;   
+    position: relative;
+}
+
+.gallery-img-left img {
+    width: 640x;
+    height: 640px;
+}
+
+.gallery-img-left i {
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.content-gallery-right {
+    width: 50%;
+    height: 560px;
+    float: right;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 0 15px 30px 15px;
+    position: relative;
+    width: 303x;
+    height: 305px;
+}
+
+.gallery-item img {
+    width: 303x;
+    height: 305px;
+}
+
+.gallery-item i {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.gallery-item:hover::before,
+.gallery-img-left:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.gallery-item:hover i,
+.gallery-img-left:hover i{
+    display: block;
+}
+
+.gallery-item i:hover,
+.gallery-img-left i:hover {
+    color: #e7b45a;
+    cursor: pointer;
+}
+
+.operate-time {
+    width: 100%;
+    height: 710px;
+    margin: 100px 0;
+    background-image: url(//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_hours_book.jpg?1638345885197);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.row-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.time-content {
+    width: 400px;
+    height: 500px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.time-content-heading {
+    font-size: 50px;
+}
+
+.content-hour {
+    margin-top: 20px;
+}
+
+.option-1,
+.option-2{
+    color: #252525;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 28px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+
+}
+
+.content-hour span {
+    color: #242424;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 33px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    
+}
+
+.line {
+    margin: 30px 0;
+    border-top: 1px dashed #ccc;
+}
+
+.call {
+    font-size: 20px;
+}
+
+.call a {
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #e7b45a;
+    line-height: 60px;
+}
+
+.banner-img {
+    margin-left: 200px;
+    width: 750px;
+    height:488px;
+    position: relative;
+}
+
+.banner-img img {
+    width: 750px;
+    height: 489px;
+}
+
+
+.btn-order {
+    padding: 20px 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    background-color: #e7b45a;
+    font-size: 26px;
+    border: 1px transparent;
+    border-radius: 60px;
+    font-weight: 700;
+    color: #fff;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn-order:hover {
+    background-color: #000;
+    cursor: pointer;
 }
