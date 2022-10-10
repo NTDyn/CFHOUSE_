@@ -10,6 +10,7 @@ html{
 
 body {
     width: 100%;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -294,7 +295,8 @@ header {
 
 .large_title,
 .title-gallery,
-.time-content-heading {
+.time-content-heading,
+.title-news {
     font-size: 40px;
     color: #e7b45a;
     font-family: "Oswald", sans-serif;
@@ -723,4 +725,89 @@ header {
 .btn-order:hover {
     background-color: #000;
     cursor: pointer;
+}
+
+.news {
+    
+}
+
+.heading-news {
+    text-align: center;
+}
+
+.content-news {
+    margin-top: 50px;
+}
+
+.content-blog {
+    width: 50%;
+    padding: 0 5px 20px 30px;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+
+.content-news-left {
+    display: inline-block;
+    width: 50%;
+}
+
+.content-news-right {
+    width: 50%; 
+}
+
+.img-news {
+    width: 263px;
+    height: 263px;
+    display: inline-block;
+}
+
+.img-news img {
+    width: 100%;
+    height: 100%;
+}
+
+.short-time {
+
+}
+
+.short-time p {
+    font-size: 20px;
+    display: inline-block;  
+}
+
+.short-time i {
+    font-size: 20px;
+    color: #e7b45a;
+    position: relative;
+    top: -2px;
+}
+
+.content-blog h3 {
+    width: 252px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.content-blog h3 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    transition: color 0.2s;
+    letter-spacing: 3px;
+}
+
+.content-blog h3:hover a {
+    color: #e7b45a;
+}
+
+.summary-news {
+    width: 252px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.summary-news p {
+    font-size: 16px;
+    letter-spacing: 1px;
 }
