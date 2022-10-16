@@ -1,0 +1,64 @@
+.imageCoffee
+{
+    width: 120px;
+    height: 100;
+    padding: 10%;
+}
+.nameCoffee
+{
+    
+    font-size: 20px;
+    padding-right: 60px;
+    padding-left: 10px;
+}
+.nameCoffee:hover
+{
+    color: #e7b45a;
+}
+.price
+{
+    width:100px;
+    height:100;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-right: 100px;
+}
+.tablesanpham
+{
+   padding: 10px;
+   margin-left: 180px;
+   margin-right: 10px;
+}
+.imageNumber1
+{
+    width: 100px;
+    height:100;
+}
+.col-sm-4
+{
+    font-size:14px;
+    font-weight:bolder;
+}
+#line
+{
+    width:30%;
+    height: 1px;
+    border-width:0;
+    background-color: gray;
+}
+
+.button
+{
+    border-radius: 39px !important;
+   
+}
+.bg-yellow
+{
+   background-color:  #e7b45a !important; 
+   border-color:#e7b45a !important;
+}
+
+.input-qty
+{
+    width: 40px;
+}
