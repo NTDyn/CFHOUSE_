@@ -294,10 +294,10 @@ header {
 }
 
 .large_title,
-.title-gallery,
+.title-gallery h2,
 .time-content-heading,
 .title-news {
-    font-size: 40px;
+    font-size:36px;
     color: #e7b45a;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
@@ -357,7 +357,7 @@ header {
 
 .menu_today{
     width: 100%;
-    height: 1150px;
+    height: 930px;
     background-color: #f4f3ea;
 }
 
@@ -366,13 +366,13 @@ header {
 }
 
 .heading_menu{
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .heading_menu .large_title,
 .title-gallery {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .heading_menu .mini_title{
@@ -396,16 +396,16 @@ header {
 
 .nav-tabs li {
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
 }
 
 .nav-tabs li button {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #000;
     border: 1px solid #e4ddd0;
     border-radius: 50px;
-    padding: 18px 20px;
+    padding: 15px 17px;
     background-color: #f4f3ea;
 }
 
@@ -424,7 +424,7 @@ header {
 
 .list-products li {
     list-style: none;
-    margin: 40px 0;
+    margin: 20px 0;
     height: 115px;
 }
 
@@ -441,16 +441,16 @@ header {
     border-radius: 50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width: 90px;
-    height: 90px;
+    width: 68px;
+    height: 68px;
 }
 
 .product-info {
     display: inline-block;
-    width: 500px;
+    width: 440px;
     height: 100%;
     position: relative;
-    bottom: 15px;
+    bottom: 10px;
 }
 
 .product-info::before {
@@ -477,7 +477,7 @@ header {
 }
 
 .name a {
-    font-size: 25px;
+    font-size: 21px;
     color: #000;
     transition: color 0.5s;
 
@@ -495,13 +495,13 @@ header {
 }
 
 .price span {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .summary_grid {
     float: bottom;
-    font-size: 20px;
+    font-size: 14px;
     color: #464646;
 }
 
@@ -518,9 +518,9 @@ header {
 
 .more-btn {
     border: 1px solid #e4ddd0;
-    padding:20px 50px;
+    padding:15px 45px;
     border-radius: 65px;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: #000;
     transition: all 0.6s;
@@ -542,17 +542,18 @@ header {
 
 .content-gallery-left {
     display: inline-block;
+    width: 50%;
 }
 
 .gallery-img-left{
-    width: 640x;
-    height: 640px;   
+    width: 555x;
+    height: 555px;   
     position: relative;
 }
 
 .gallery-img-left img {
-    width: 640x;
-    height: 640px;
+    width: 555x;
+    height: 555px;
 }
 
 .gallery-img-left i {
@@ -575,15 +576,16 @@ header {
 
 .gallery-item {
     display: inline-block;
-    margin: 0 15px 30px 15px;
+    margin: 0 0 30px 15px;
     position: relative;
-    width: 303x;
-    height: 305px;
+    width: 260px;
+    height: 262px;
+    padding-left: 15px;
 }
 
 .gallery-item img {
-    width: 303x;
-    height: 305px;
+    width: 260px;
+    height: 262px;
 }
 
 .gallery-item i {
@@ -648,7 +650,7 @@ header {
 }
 
 .time-content-heading {
-    font-size: 50px;
+
 }
 
 .content-hour {
@@ -658,22 +660,22 @@ header {
 .option-1,
 .option-2{
     color: #252525;
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Roboto", sans-serif;
     line-height: 28px;
     margin-top: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
 }
 
 .content-hour span {
     color: #242424;
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Roboto", sans-serif;
     line-height: 33px;
     opacity: 0.8;
     margin-bottom: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     
 }
 
@@ -696,7 +698,7 @@ header {
 }
 
 .banner-img {
-    margin-left: 200px;
+    margin-left: 150px;
     width: 750px;
     height:488px;
     position: relative;
@@ -772,12 +774,12 @@ header {
 }
 
 .short-time p {
-    font-size: 20px;
+    font-size: 14px;
     display: inline-block;  
 }
 
 .short-time i {
-    font-size: 20px;
+    font-size: 14px;
     color: #e7b45a;
     position: relative;
     top: -2px;
@@ -795,6 +797,7 @@ header {
     font-size: 28px;
     transition: color 0.2s;
     letter-spacing: 3px;
+    hyphens: auto;
 }
 
 .content-blog h3:hover a {
@@ -808,6 +811,6 @@ header {
 }
 
 .summary-news p {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
 }
