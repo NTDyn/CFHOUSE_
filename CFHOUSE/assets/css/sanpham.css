@@ -1,8 +1,20 @@
+.captionName
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#e7b45a;
+    font-weight: 300px;
+
+}
 .imageCoffee
 {
+    border-radius: 100%;
     width: 120px;
     height: 100;
     padding: 10%;
+}
+.imageCoffee:hover
+{
+    color:#e7b45a
 }
 .nameCoffee
 {
@@ -15,7 +27,7 @@
 {
     color: #e7b45a;
 }
-.price
+.priceCoffee
 {
     width:100px;
     height:100;
@@ -31,6 +43,7 @@
 }
 .imageNumber1
 {
+   
     width: 100px;
     height:100;
 }
@@ -39,12 +52,14 @@
     font-size:14px;
     font-weight:bolder;
 }
-#line
+.lineProduct
 {
-    width:30%;
+    
     height: 1px;
     border-width:0;
     background-color: gray;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .button
@@ -60,5 +75,10 @@
 
 .input-qty
 {
-    width: 40px;
+    width: 30px;
+    text-align: center;
+}
+.plus-minus-qty
+{
+    width: 30px;
 }
