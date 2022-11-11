@@ -27,6 +27,7 @@
 {
     color: #e7b45a;
 }
+
 .priceCoffee
 {
     width:100px;
@@ -34,12 +35,14 @@
     font-weight: bolder;
     font-size: 20px;
     padding-right: 100px;
+    text-align: center;
 }
 .tablesanpham
 {
    padding: 10px;
-   margin-left: 180px;
-   margin-right: 10px;
+   margin-left:auto;
+   margin-right:auto;
+
 }
 .imageNumber1
 {
