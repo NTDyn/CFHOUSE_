@@ -1,9 +1,7 @@
 .captionName
 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Times New Roman', Times, serif;
     color:#e7b45a;
-    font-weight: 300px;
-
 }
 .imageCoffee
 {
@@ -19,9 +17,14 @@
 .nameCoffee
 {
     
-    font-size: 20px;
+    font-size: 180%;
     padding-right: 60px;
     padding-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100%;
+}
+.emptyCell{
+    width: 13%;
 }
 .nameCoffee:hover
 {
@@ -31,15 +34,14 @@
 .priceCoffee
 {
     width:100px;
-    height:100;
     font-weight: bolder;
     font-size: 20px;
-    padding-right: 100px;
+    padding-right: 10%;
     text-align: center;
 }
 .tablesanpham
 {
-   padding: 10px;
+   padding: 10%;
    margin-left:auto;
    margin-right:auto;
 
