@@ -17,8 +17,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/sanpham.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  
+    <link rel="stylesheet" href="./assets/css/bootstrap_modal.css">
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <link rel="stylesheet" href="./assets/css/modalCart.css"  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/iconfonts/plugin.css">
+    <link rel="stylesheet" href="./assets/css/iconfonts/icons.css">
     
 </head>
 <body>
@@ -67,7 +70,7 @@
                             <li class="nav-item">
                                 <a class="a-img " href="">
                                     Sản phẩm
-                                    <i class="fa-solid fa-caret-down"></i>
+                                    <i class="fa fa-sort-desc"></i>
                                 </a>
                                 <ul class="subnav">
                                     <li class="subnav-item"><a href="./caphethegioi.html">Cà phê thế giới</a></li>
@@ -96,22 +99,18 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="a-img " href="">
+                                <a class="a-img " href="../CFLH/lienhe.html">
                                     Liên hệ
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <div id ="cart-icon" >
+                                    <span  class ="zmdi zmdi-mall" style="color:#e7b45a; width: 20px;"  data-toggle="modal" data-target="#modal-cart"></span>
+                                </div>
+                                
+                            </li>
                         </ul>
-                        <div class="cart f-right">
-                            <div class="cart-contain">
-                                <a href="" style="text-decoration: none;">
-                                    <div class="visible-index">
-                                        <i class="fa-solid fa-bag-shopping active" style="font-size: 25px;"></i>
-                                        <span class="count-item">0</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </d>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,6 +166,32 @@
         <hr class="lineProduct">
     </div>
    
+ <!-- Modal gio hang -->
+ <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body">
+            <table>
+                <tr>
+                    <td>Sản Phẩm</td>
+                    <td>Giá Tiền</td>
+                    <td>Số Lượng</td>
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
+        </div>
+      </div>
+    </div>
+  </div>
    
   <!-- Modal cftrung -->
   <div class="modal fade" id="modal-cftrung" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -194,11 +219,12 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
   </div>
+  
   <!-- Modal capirinha-->
   <div class="modal fade" id="modal-caipirinha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -225,7 +251,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -256,7 +282,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -289,7 +315,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -321,7 +347,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -352,7 +378,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -383,7 +409,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -414,7 +440,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -445,7 +471,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">ĐẶT HÀNG</button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
