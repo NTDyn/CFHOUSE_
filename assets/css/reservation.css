@@ -1,0 +1,136 @@
+body {
+    height: 1810px;
+}
+
+.reservation{
+    width: 100%;
+    height: 610px;
+    background-image: url(//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_hours_book.jpg?1638345885197);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 550px;
+    position: relative;
+    top: 300px;
+}
+
+.reservation-header{
+    display: inline-block;
+    padding-bottom: 20px;
+    position: relative;
+    top: -270px;
+}
+
+.reservation-header a {
+    text-decoration: none;
+}
+
+.reservation-header p {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.reservation-header i {
+    font-size: 3px;
+    vertical-align: middle;
+}
+
+.row-content {
+    height: 500px;
+}
+
+.time-content {
+    top: -110px;
+}
+
+.form-reservation {
+    margin-left: 40px;
+    width: 940px;
+    height:489px;
+    position: relative;
+    top: -150px;
+    background-color: #e7b45a;
+    text-align: center;
+}
+
+.form-title {
+    padding: 40px 0;
+}
+
+.form-title h1 {
+    font-size:36px;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.form-title span {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+}
+
+.input-contain {
+    display: inline-block;
+    margin: 20px 30px 10px;
+}
+
+.input-login {
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #e7b45a;
+    color: #fff;
+    border-radius: 30px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border: 1px solid #e7b45a;
+    outline-offset: 0px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-conform {
+    margin-top: 30px;
+}
+
+.btn-conform button {
+    background-color: #fff;
+    width: 230px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid #e7b45a;
+    transition: all 0.1s linear;
+}
+
+.btn-conform button:hover {
+    border: 1px solid transparent;
+    background-color: #e7b45a;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-conform button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.footer {
+    position: relative;
+    bottom: 100px;
+    height: 750px;
+}
+
+hr {
+    margin-bottom: 50px;
+}

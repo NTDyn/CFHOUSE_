@@ -10,7 +10,9 @@ html{
 
 body {
     width: 100%;
+    height: 100%;
     font-family: "Roboto", sans-serif;
+    cursor: default;
 }
 
 .container {
@@ -177,8 +179,6 @@ header {
     }
 }
 
-/* Nhớ khi làm js thì phải làm hiệu ứng mouseenter nha Toàn */
-
 .nav-left,
 .logo_center,
 .nav-right{
@@ -329,7 +329,7 @@ header {
 }
 
 .img-about {
-    width: 6s00px;
+    width: 600px;
     height: 500px;
     display: inline-block;
     position: absolute;
@@ -648,7 +648,7 @@ header {
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bolder;
     color: #fff;
     cursor: pointer;
@@ -660,7 +660,7 @@ header {
     top: 50%;   
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid #e7a63b;
+    border: 1px solid #e7a63b;
     border-radius: 5px;
     width: 750px;
     object-fit: cover;
@@ -670,7 +670,7 @@ header {
 .operate-time {
     width: 100%;
     height: 710px;
-    margin: 100px 0;
+    margin: 100px 0 0;
     background-image: url(//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_hours_book.jpg?1638345885197);
     background-repeat: no-repeat;
     background-size: cover;
@@ -760,11 +760,8 @@ header {
     bottom: 40px;
     right: 50px;
     background-color: #e7b45a;
-    font-size: 26px;
     border: 1px transparent;
     border-radius: 60px;
-    font-weight: 700;
-    color: #fff;
     transition: background-color 0.3s ease-out;
 }
 
@@ -773,8 +770,16 @@ header {
     cursor: pointer;
 }
 
+.btn-order a {
+    font-weight: 700;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+}
+
 .news {
-    
+    position: relative;
+    top: 100px;
 }
 
 .heading-news {
@@ -898,4 +903,103 @@ header {
     display: inline-block;
     width: 200px;
     vertical-align: middle;
+}
+
+.footer{
+    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_footer.png?1638345885197");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 750px;
+}
+
+.box-map{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+}
+
+
+.footer-contact {
+    position: absolute;
+    right: 350px;
+    top: 260px;
+}
+
+.infor,
+.follow-option {
+    margin-bottom: 30px;
+}
+
+.infor ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.infor ul li i{
+    padding-right: 20px;
+}
+
+.infor span {
+    color: #fff;
+}
+
+.infor ul li a,
+.infor i {
+    color: #b7b7b7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.follow-option {
+    border-bottom: 1px solid #363636;
+    padding-bottom: 40px ;
+}
+
+.follow-option ul {
+    display: inline-block;
+}
+
+.follow-option ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.follow-option ul li i {
+    font-size: 20px;
+    color: #b7b7b7;
+}
+
+.customer-care {
+    padding-right: 60px;
+    border-right: 1px solid #363636;
+}
+
+.contact-us {
+    margin-left: 20px;
+}
+
+.customer-care,
+.contact-us {
+    display: inline-block;
+}
+
+.list-menu li,
+.contact-us li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+.list-menu span,
+.contact-us span {
+    color: #fff;
+}
+
+.list-menu li a,
+.contact-us li a {
+    color: #b7b7b7;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.1px
 }
