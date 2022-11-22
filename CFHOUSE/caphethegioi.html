@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
@@ -103,13 +103,17 @@
                                     Liên hệ
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <div id ="cart-icon" >
-                                    <span  class ="zmdi zmdi-mall" style="color:#e7b45a; width: 20px;"  data-toggle="modal" data-target="#modal-cart"></span>
-                                </div>
-                                
-                            </li>
                         </ul>
+                        <div class="cart f-right">
+                            <div class="cart-contain">
+                                <a href="" style="text-decoration: none;">
+                                    <div class="visible-index">
+                                        <i class="fa-solid fa-bag-shopping active" data-toggle="modal" data-target="#modal-cart" style="font-size: 25px;"></i>
+                                        <span class="count-item">0</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,23 +175,35 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+            <h3>GIỎ HÀNG</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
+            <span aria-hidden="true">&times;</span>    
         </div>
         <div class="modal-body">
-            <table>
-                <tr>
-                    <td>Sản Phẩm</td>
-                    <td>Giá Tiền</td>
-                    <td>Số Lượng</td>
-                </tr>
-                <tr>
-                    
-                </tr>
+            <table class="cart-table">
+                <thead>
+                    <tr class="tr-cart">
+                        <th class="th-cart" style="width: 5%"></th>
+                        <th class="th-cart" style="width: 50%">Sản Phẩm</th>
+                        <th class="th-cart" style="width: 20%">Giá Tiền</th>
+                        <th class="th-cart" style="width: 20%">Số Lượng</th>
+                        <th class="th-cart" style="width: 5%"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-cart-cfthegioi" >
+                   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="td-cart float-right" colspan="5" id="total-cart"> </td>
+                  
+                    </tr>
+                </tfoot>
+                
             </table>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THANH TOÁN </button>
         </div>
       </div>
     </div>
@@ -219,7 +235,7 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg" id="btn-add-cart">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
