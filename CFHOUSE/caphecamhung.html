@@ -16,49 +16,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-
     <link rel="stylesheet" href="./assets/css/sanpham.css">
     <link rel="stylesheet" href="./assets/css/bootstrap_modal.css">
-    
-
-   
-    
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <link rel="stylesheet" href="./assets/css/modalCart.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootdtrap.min.css"> 
 </head>
 <body>
     <header> 
-        <div class="topbar">
-            <div class="container">
-                <div class="topbar-row">
-                    <div class="topbar-left">
-                        <ul>
-                            <li> 
-                                <span class="welcome-text">Chào mừng bạn đến với Coffee House</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="topbar-right">
-                        <div class="f-right">
-                            <ul class="ul-account">
-                                <li>
-                                    <a href="" title="Đăng ký">Đăng ký</a>
-                                </li>
-                                <li class="line">/</li>
-                                <li>
-                                    <a href="" title="Đăng nhập">Đăng nhập</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <br>
+        <br>
+        <br>
         <div class="mid-header">
             <div class="container">
                 <div class="mid-header-row">
                     <div class="header-nav">
                         <ul class="nav-left">
                             <li class="nav-item ">
-                                <a class="a-img active" href="../index.html">
+                                <a class="a-img " href="../index.html">
                                     Trang chủ
                                 </a>
                             </li>
@@ -68,7 +43,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="a-img " href="">
+                                <a class="a-img active" href="">
                                     Sản phẩm
                                     <i class="fa-solid fa-caret-down"></i>
                                 </a>
@@ -106,9 +81,9 @@
                         </ul>
                         <div class="cart f-right">
                             <div class="cart-contain">
-                                <a href="" style="text-decoration: none;">
+                                <a  style="text-decoration: none;">
                                     <div class="visible-index">
-                                        <i class="fa-solid fa-bag-shopping active" style="font-size: 25px;"></i>
+                                        <i class="fa-solid fa-bag-shopping active"  id="btn-cart-icon" style="font-size: 25px;"></i>
                                         <span class="count-item">0</span>
                                     </div>
                                 </a>
@@ -124,44 +99,44 @@
         <table class="tablesanpham" >
             <caption style="text-align:center" class="captionName"><h1>CÀ PHÊ CẢM HỨNG</h1></caption>
             <tr>
-                <td><img src="./assets/img/cftrung.jpg" class="imageCoffee" data-toggle="modal" data-target="#modal-cftrung"></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-cftrung">Cà phê trứng</td>
+                <td><img src="./assets/img/cftrung.jpg" class="imageCoffee show-detail" data='{ "ID": 1 , "CategoryID": 3 }'></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 1 , "CategoryID": 3 }'>Cà phê trứng</td>
                 <td class="priceCoffee">50.000đ</td>
                 <td class ="emptyCell"></td>
-                <td><img src="./assets/img/metro.jpg" class="imageCoffee"data-toggle="modal" data-target="#modal-metro" /></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-metro">Cà phê The Metro</td>
+                <td><img src="./assets/img/metro.jpg" class="imageCoffee show-detail" data='{ "ID": 12 , "CategoryID": 3 }'/></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 12 , "CategoryID": 3 }'>Cà phê The Metro</td>
                 <td class="priceCoffee">130.000đ</td>
             </tr>
             <tr>
-                <td><img src="./assets/img/rainbow.jpg" class="imageCoffee" data-toggle="modal" data-target="#modal-rainbow"/></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-rainbow">Cà phê The Rainbow</td>
+                <td><img src="./assets/img/rainbow.jpg" class="imageCoffee show-detail" data='{ "ID": 15 , "CategoryID": 3 }'/></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 15 , "CategoryID": 3 }' >Cà phê The Rainbow</td>
                 <td class="priceCoffee">90.000đ</td>
                 <td class ="emptyCell"></td>
-                <td><img src="./assets/img/mojitoespresso.jpg" class="imageCoffee"  data-toggle="modal" data-target="#modal-mojitoespresso"/></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-mojitoespresso">Cà phê Mojto Presso</td>
+                <td><img src="./assets/img/mojitoespresso.jpg" class="imageCoffee show-detail" data='{ "ID": 14 , "CategoryID": 3 }' /></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 14 , "CategoryID": 3 }' >Cà phê Mojto Presso</td>
                 <td class="priceCoffee">130.000đ</td>
             </tr>
             <tr>
-                <td><img src="./assets/img/capuchino.jpg"class="imageCoffee" data-toggle="modal" data-target="#modal-capuchino"/></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-capuchino">Cà phê Capuchino</td>
+                <td><img src="./assets/img/capuchino.jpg"class="imageCoffee show-detail" data='{ "ID": 5 , "CategoryID": 3 }' /></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 5 , "CategoryID": 3 }' >Cà phê Capuchino</td>
                 <td class="priceCoffee">300.000đ</td>
                 <td class ="emptyCell"></td>
-                <td><img src="./assets/img/espressopanda.jpg" class="imageCoffee" data-toggle="modal" data-target="#modal-espressopanda"/></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-espressopanda">Cà phê Espresso con Panda</td>
+                <td><img src="./assets/img/espressopanda.jpg" class="imageCoffee show-detail" data='{ "ID": 6 , "CategoryID": 3 }' /></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 6 , "CategoryID": 3 }'>Cà phê Espresso con Panda</td>
                 <td class="priceCoffee">120.000đ</td>
             </tr>
             <tr>
-                <td><img src="./assets/img/espresso.jpg" class="imageCoffee" data-toggle="modal" data-target="#modal-espresso" /></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-espresso">Cà phê Espresso</td>
+                <td><img src="./assets/img/espresso.jpg" class="imageCoffee show-detail" data='{ "ID": 7 , "CategoryID": 3 }' /></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 7 , "CategoryID": 3 }'>Cà phê Espresso</td>
                 <td class="priceCoffee">200.000đ</td>
                 <td class ="emptyCell"></td>
-                <td><img src="./assets/img/americano.jpg" class="imageCoffee"  data-toggle="modal" data-target="#modal-americano"/></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-americano">Cà phê Americano</td>
+                <td><img src="./assets/img/americano.jpg" class="imageCoffee show-detail" data='{ "ID": 8 , "CategoryID": 3 }' /></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 8 , "CategoryID": 3 }'>Cà phê Americano</td>
                 <td class="priceCoffee">150.000đ</td>
             </tr>
             <tr>
-                <td><img src="./assets/img/cfsua.jpg" class="imageCoffee"  data-toggle="modal" data-target="#modal-cfsua"/></td>
-                <td class="nameCoffee" data-toggle="modal" data-target="#modal-cfsua">Cà phê sữa</td>
+                <td><img src="./assets/img/cfsua.jpg" class="imageCoffee show-detail" data='{ "ID": 9 , "CategoryID": 3 }'/></td>
+                <td class="nameCoffee show-detail" data='{ "ID": 9 , "CategoryID": 3 }' >Cà phê sữa</td>
                 <td class="priceCoffee">100.000đ</td>
             </tr>
         </table>
@@ -171,39 +146,48 @@
     </div>
    
    
-  <!-- Modal cftrung -->
-  <div class="modal fade" id="modal-cftrung" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <!-- Modal gio hang -->
+ <div class="modal fade" id="modal-cart" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+            <br>
+            <h4 id="name-cart">GIỎ HÀNG</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
+            <span aria-hidden="true">&times;</span>    
         </div>
         <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/cftrung.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ TRỨNG</h2><br>
-                    <p>Cà phê Trứng được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
+            <table class="cart-table">
+                <thead>
+                    <tr class="tr-cart">
+                        <th class="th-cart" style="width: 5%"></th>
+                        <th class="th-cart" style="width: 50%">Sản Phẩm</th>
+                        <th class="th-cart" style="width: 20%">Giá Tiền</th>
+                        <th class="th-cart" style="width: 20%">Số Lượng</th>
+                        <th class="th-cart" style="width: 5%"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-cart" >
+                   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="td-cart float-right" colspan="5" id="total-cart"> </td>
+                  
+                    </tr>
+                </tfoot>
+                
+            </table>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THANH TOÁN </button>
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal rainbow-->
-  <div class="modal fade" id="modal-rainbow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   
+  <!-- Modal chitiet -->
+  <div class="modal fade" id="modal-detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -213,242 +197,22 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="./assets/img/rainbow.jpg" width="100%" />
+                    <img id="img-detail" width="100%" />
                 </div>
                 <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ THE RAINBOW</h2><br>
-                    <p>Cà phê The Rainbow được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
+                    <h2 align="center" id="name-detail"></h2><br>
+                    <p id="content-detail"></p>
                     <br>
                     <div align="center">
                         <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
+                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly" >
                         <button type="button"class="plus-minus-qty">+</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
- <!-- Modal Moji espresso-->
- <div class="modal fade" id="modal-mojitoespresso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/mojitoespresso.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ MOJITO ESPRESSO</h2><br>
-                    <p>Cà phê Mojito Espresso được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Modal Metro-->
- <div class="modal fade" id="modal-metro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/metro.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ METRO</h2><br>
-                    <p>Cà phê Metro được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal americano-->
- <div class="modal fade" id="modal-americano" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/americano.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ AMERICANO</h2><br>
-                    <p>Cà phê Americano được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal cfsua-->
- <div class="modal fade" id="modal-cfsua" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/cfsua.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ SỮA</h2><br>
-                    <p>Cà phê sữa được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Capuchino-->
- <div class="modal fade" id="modal-capuchino" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/capuchino.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ CAPUCHINO</h2><br>
-                    <p>Cà phê Cappuccino được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal espresso con panda-->
- <div class="modal fade" id="modal-espressopanda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/espressopanda.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ ESPRESSO CON PANDA</h2><br>
-                    <p>Cà phê Espresso con panda được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal espresso-->
- <div class="modal fade" id="modal-espresso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="./assets/img/espresso.jpg" width="100%" />
-                </div>
-                <div class="col-sm-8">
-                    <h2 align="center">CÀ PHÊ ESPRESSO</h2><br>
-                    <p>Cà phê Espresso được chọn lọc kỹ lưỡng từ vùng đất đỏ bazan Buôn Mê Thuột; sau đó trải qua quá trình sàng lọc, rang xay dưới sự kiểm soát nghiêm ngặt về nhiệt độ và thời gian để đạt đến đỉnh cao của mùi thơm, độ nở và hương vị riêng biệt. Sự hài hòa trong tỷ lệ pha trộn giữa hạt cà phê Robusta và Arabica mang đến cho khách hàng những ly cà phê pha máy – kiểu Ý nhưng vẫn đậm đà bản sắc và đặc trưng của văn hóa nước Việt Nam.</p>
-                    <br>
-                    <div align="center">
-                        <button type="button"class="plus-minus-qty">-</button>
-                        <input aria-label="quantity" class="input-qty"  type="text" value="1" align="center" readonly="readonly">
-                        <button type="button"class="plus-minus-qty">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary button bg-yellow btn-lg">THÊM VÀO GIỎ </button>
+          <button type="button" class="btn btn-primary button bg-yellow btn-lg" id="btn-add-cart">THÊM VÀO GIỎ </button>
         </div>
       </div>
     </div>
@@ -485,7 +249,8 @@
 </div>
 </body>
 </html>
-<script src="./js/jquery.js"></script>
-<script src="./js/soluong.js?n=898474723"></script>
-<script src="./js/bootstrap1.js"></script>
-<script src="./js/bootstrap2.js"></script>
+<script src="/assets/js/slider.js"></script>
+<script src="./assets/js/jquery/jquery.min.js"></script>
+<script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="./assets/js/soluong.js"></script>
+<script src="./assets/js/swal/successNotification.js"></script>
