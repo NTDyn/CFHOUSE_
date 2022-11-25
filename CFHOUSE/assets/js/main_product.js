@@ -282,5 +282,21 @@ function valueDetail(_data){
           })
 
     }
-    
 }
+
+
+$('.btn-pay-bill').click(function(){
+    dataCart = [];
+    localStorage.setItem("sessionDataCart", JSON.stringify(dataCart));
+    getNumberItems();
+    totalPrice();
+    $('#tbody-cart').empty();
+    $('#modal-cart').modal('hide');
+    Swal.fire({ 
+        icon: 'success',
+        title: 'Thanh toán thành công',
+        showConfirmButton: false,
+        timer: 1500
+      })
+   
+})
