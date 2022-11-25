@@ -274,7 +274,7 @@ b{
 }
 
 .page_contact .select_maps .list-menu a {
-    color: red;
+    color: black;
 }
 .page_contact .hotline_contact {
     float: left;
@@ -321,7 +321,6 @@ ol, ul {
 .page-login {
     padding-bottom: 50px;
     margin-bottom: 35px;
-    border-bottom: 1px solid #ebebeb;
 }
 .padding-bottom-0 {
     padding-bottom: 0px !important;
@@ -625,4 +624,12 @@ iframe {
     border-color: initial;
     border-image: initial;
 }
-
+.lineProduct
+{
+    
+    height: 1px;
+    border-width:0;
+    background-color: gray;
+    margin-left: 30%;
+    margin-right: 30%;
+}
