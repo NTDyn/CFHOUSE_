@@ -16,10 +16,11 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     height: 100%;
 }
+
 
 .f-right {
     float: right !important;
@@ -46,6 +47,7 @@ header {
     top: 0;
     right: 0;
     z-index: 1;
+
 }
 
 .topbar {
@@ -109,6 +111,7 @@ header {
     background-color: black;
     position: relative;
     top: 15px;
+    max-width: 100%;
 }
 
 .mid-header-row {
@@ -415,6 +418,7 @@ header {
 
 .tabs-content{
     margin-top: 40px;
+    margin-left: 80px;
 }
 
 .tab-content1-left {
@@ -549,6 +553,7 @@ header {
     width: 555x;
     height: 555px;   
     position: relative;
+    margin-left: 30px;
 }
 
 .gallery-img-left img {
@@ -613,7 +618,7 @@ header {
 
 .gallery-img-left:hover::before {
     content: "";
-    width: 100%;
+    width: 555px;
     height: 100%;
     display: block;
     background: rgba(0,0,0,0.5);
@@ -918,12 +923,13 @@ header {
     display: inline-block;
     position: absolute;
     top: 300px;
+    left: 300px;
 }
 
 
 .footer-contact {
     position: absolute;
-    right: 350px;
+    right: 150px;
     top: 260px;
 }
 
