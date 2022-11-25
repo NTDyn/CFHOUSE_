@@ -16,6 +16,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./CFHOUSE/assets/css/bootstrap_modal.css">
+    <link rel="stylesheet" href="./CFHOUSE/assets/css/giohang.css">
+    <link rel="stylesheet" href="./CFHOUSE/assets/css/modalCart.css">
+    <link rel="stylesheet" href="./CFHOUSE/assets/css/bootstrap/bootdtrap.min.css"> 
+    
 </head>
 <body>
     <header> 
@@ -99,9 +104,9 @@
                         </ul>
                         <div class="cart f-right">
                             <div class="cart-contain">
-                                <a href="" style="text-decoration: none;">
+                                <a  style="text-decoration: none;">
                                     <div class="visible-index">
-                                        <i class="fa-solid fa-bag-shopping active" style="font-size: 25px;"></i>
+                                        <i class="fa-solid fa-bag-shopping active" id="btn-cart-icon" style="font-size: 25px;"></i>
                                         <span class="count-item">0</span>
                                     </div>
                                 </a>
@@ -1128,8 +1133,51 @@
             </div>
         </div>
     </div>
-    <script src="./assets/js/slider.js"></script>
-    <script src="./assets/js/menu.js"></script>
-    <script src="./assets/js/popup.js"></script>
+    <!-- Modal gio hang -->
+ <div class="modal fade" id="modal-cart" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <br>
+            <h4 id="name-cart">GIỎ HÀNG</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
+            <span aria-hidden="true">&times;</span>    
+        </div>
+        <div class="modal-body">
+            <table class="cart-table">
+                <thead>
+                    <tr class="tr-cart">
+                        <th class="th-cart" style="width: 5%"></th>
+                        <th class="th-cart" style="width: 50%">Sản Phẩm</th>
+                        <th class="th-cart" style="width: 20%">Giá Tiền</th>
+                        <th class="th-cart" style="width: 20%">Số Lượng</th>
+                        <th class="th-cart" style="width: 5%"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-cart" >
+                   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="td-cart float-right" colspan="5" id="total-cart"> </td>
+                  
+                    </tr>
+                </tfoot>
+                
+            </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn  button bg-yellow btn-lg btn-pay-bill" style="background-color: #e7b45a; border-radius: 39px !important; color:#ffffff">THANH TOÁN </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/popup.js"></script>
 </body>
 </html>
+<script src="./CFHOUSE/assets/js/jquery/jquery.min.js"></script>
+<script src="./CFHOUSE/assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="./CFHOUSE/assets/js/swal/successNotification.js"></script>
+<script src="./CFHOUSE/assets/js/main_product.js"></script>
