@@ -134,10 +134,15 @@ let dataProduct = [
 //Save data during pages
 $(document).ready(function(){
     let strSession = localStorage.getItem('sessionDataCart');
-    dataCart = JSON.parse(strSession);
-    appendHtmlCart();
-    totalPrice();
-    getNumberItems(); 
+    if(strSession == null || strSession == ""){
+       localStorage.setItem('sessionDataCart',"[]");
+       strSession = "[]";
+    }else{
+        dataCart = JSON.parse(strSession);
+        appendHtmlCart();
+        totalPrice();
+        getNumberItems(); 
+    }
 })
 
 
@@ -220,6 +225,9 @@ function appendHtmlCart(){
             $("#tbody-cart").append(strTrBody); 
         })
     }
+    else{
+       $('#total-cart').text('Chưa có sản phẩm');
+    }
 }
 //function about total price of ordered product
 function totalPrice(){
@@ -239,6 +247,9 @@ function getNumberItems(){
 
 // function open modal-cart
 $('#btn-cart-icon').click(function(){
+    if(dataCart.length == 0){
+         $('#total-cart').text('Chưa có sản phẩm');
+    }
     $('#modal-cart').modal('show');
 })
 
@@ -286,17 +297,25 @@ function valueDetail(_data){
 
 
 $('.btn-pay-bill').click(function(){
-    dataCart = [];
-    localStorage.setItem("sessionDataCart", JSON.stringify(dataCart));
-    getNumberItems();
-    totalPrice();
-    $('#tbody-cart').empty();
-    $('#modal-cart').modal('hide');
-    Swal.fire({ 
-        icon: 'success',
-        title: 'Thanh toán thành công',
-        showConfirmButton: false,
-        timer: 1500
-      })
-   
+    if(dataCart.length == 0){
+        Swal.fire({ 
+            icon: 'error',
+            title: 'Vui lòng thêm sản phẩm!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }else{
+        dataCart = [];
+        localStorage.setItem("sessionDataCart", JSON.stringify(dataCart));
+        getNumberItems();
+        totalPrice();
+        $('#tbody-cart').empty();
+        $('#modal-cart').modal('hide');
+        Swal.fire({ 
+            icon: 'success',
+            title: 'Thanh toán thành công',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
 })
