@@ -109,33 +109,7 @@ li {
 .breadcrumb li>a {
     color: white;
 }
-a, .text-link {
-    color: #252525;
-    text-decoration: none;
-    background: transparent;
-}
-a {
-    -webkit-transition: all 150ms ease-in-out;
-    -moz-transition: all 150ms ease-in-out;
-    -ms-transition: all 150ms ease-in-out;
-    -o-transition: all 150ms ease-in-out;
-    transition: all 150ms ease-in-out;
-}
-a{
-    color: #252525;
-}
-a {
-    color: #337ab7;
-    text-decoration: none;
-}
-a {
-    background-color: transparent;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
+
 .breadcrumb_nobackground .bread-crumb .breadcrumb li a span {
     color: black;
 }
@@ -206,7 +180,7 @@ strong {
     margin-bottom: 25px;
 }
 .page_contact .title-head-contact {
-    color: gold;
+    color: #e7b45a;
     font-size: 24px !important;
     font-family: "Courier New",sans-serif;
     font-weight: 700;
@@ -220,12 +194,12 @@ strong {
     margin: 0px;
     padding: 0px 0px 15px;
     font-size: 20px;
-    color: gold;
+    color: #e7b45a;
     line-height: 37px;
     text-align: left;
 }
 h1{
-    color: gold;
+    color: #e7b45a;
     letter-spacing: .01em;
 }
 h1{
@@ -287,13 +261,16 @@ ul {
 }
 b{
     font-weight: 700;
-    font-weight: bold;
 }
-
+.list-menu span{
+    color: black;
+    font-size: 16px;
+    line-height: 0;
+}
 .page_contact .select_maps .widget-db .item li .txt_content_child p{
     color:black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .page_contact .select_maps .list-menu a {
@@ -302,6 +279,9 @@ b{
 .page_contact .hotline_contact {
     float: left;
     width: 100%;
+}
+.page_contact .hotline_contact li {
+    padding: 0;
 }
 .page_contact .select_maps .hotline_contact ul {
     padding: 0;
@@ -346,6 +326,7 @@ ol, ul {
 .padding-bottom-0 {
     padding-bottom: 0px !important;
 }
+
 .page_contact .title-head-contact-2 {
     text-transform: none;
     padding-bottom: 10px;
@@ -363,7 +344,7 @@ ol, ul {
 }
 .page_contact .title-head-contact-2 {
     margin: 0px;
-    padding: 0px 0px 0px;
+    padding: 0;
     font-size: 20px;
     color: #041721;
     line-height: 20px;
