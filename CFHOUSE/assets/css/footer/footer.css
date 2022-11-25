@@ -1,18 +1,13 @@
 @media (min-width: 1400px) and (max-width: 1899px){
     .footer {
-    background-image: url(//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_footer.png?1638345885197);
+    background-image: url(/CFLH/assets/img/bg_footer.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-}
-.footer {
     float: left;
     width: 100%;
-    background-image: url(//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_footer.png?1638345885197);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: auto;
+}
 }
 .section_service_end {
     padding: 0px 0px;
@@ -35,7 +30,7 @@
 }
 @media (max-width: 767px){
     .mid_footer {
-    background-image: url(//assets/img/bg_midfooter.png);
+    background-image: url(/CFHOUSE/assets/img/bg_midfooter.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -189,7 +184,7 @@ footer.footer .widget-ft.first:before {
 }
 footer.footer .title-menu {
     margin: 0;
-    line-height: normal;
+    line-height: 0;
     letter-spacing: 0.5px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -246,6 +241,7 @@ h4 a{
     text-decoration: none;
     font-weight: inherit;
 }
+
 @media (min-width: 768px){
     footer.footer .collapse {
     display: block;
@@ -264,15 +260,22 @@ footer.footer .list-menu {
     line-height: 35px;
     padding: 0px;
 }
-
-footer.footer .list-menu .li_menu {
+.list-menu li{
+    list-style: none;
+    padding: 0;
+}
+footer.footer .list-menu .li {
     margin-bottom: 0px;
     font-size: 14px;
     line-height: 32px;
     position: relative;
 }
-footer.footer .list-menu .li_menu a {
+.list-menu li a{
     color: #b7b7b7;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.1px;
+    text-decoration: underline;
 }
 footer.footer .widget-ft {
     padding-bottom: 60px;
