@@ -1,99 +1,99 @@
 function addHeader() {
     document.write(`
     <header> 
-        <div class="topbar">
-            <div class="container">
-                <div class="topbar-row">
-                    <div class="topbar-left">
-                        <ul>
-                            <li> 
-                                <span class="welcome-text">Chào mừng bạn đến với Coffee House</span>
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-row">
+                <div class="topbar-left">
+                    <ul>
+                        <li> 
+                            <span class="welcome-text">Chào mừng bạn đến với Coffee House</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topbar-right">
+                    <div class="f-right">
+                        <ul class="ul-account">
+                            <li>
+                                <a href="./register.html" title="Đăng ký">Đăng ký</a>
+                            </li>
+                            <li class="line">/</li>
+                            <li>
+                                <a href="./log-in.html" title="Đăng nhập">Đăng nhập</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="topbar-right">
-                        <div class="f-right">
-                            <ul class="ul-account">
-                                <li>
-                                    <a href="./register.html"  title="Đăng ký">Đăng ký</a>
-                                </li>
-                                <li class="line">/</li>
-                                <li>
-                                    <a href="./log-in.html" title="Đăng nhập">Đăng nhập</a>
-                                </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mid-header">
+        <div class="container">
+            <div class="mid-header-row">
+                <div class="header-nav">
+                    <ul class="nav-left">
+                        <li class="nav-item ">
+                            <a class="a-img active" href="">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a-img " href="./GT.html">
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a-img " href="">
+                                Sản phẩm
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="subnav">
+                                <li class="subnav-item"><a href="./CFHOUSE/caphethegioi.html">Cà phê thế giới</a></li>
+                                <li class="subnav-item"><a href="./CFHOUSE/caphephaviet.html">Cà phê pha Việt</a></li>
+                                <li class="subnav-item"><a href="./CFHOUSE/caphecamhung.html">Cà phê cảm hứng</a></li>
+                                <li class="subnav-item"><a href="./CFHOUSE/douong.html">Đồ uống</a></li>
                             </ul>
+                        </li>
+                    </ul>
+                    <ul class="logo_center">
+                        <li class="logo">
+                            <a href="/" class="logo-wrapper">
+                                <img src="./assets/img/logo/logo-img.webp" alt="" class="logo-img">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="nav-item">
+                            <a class="a-img " href="./TD1.html">
+                                Tuyển Dụng
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a-img " href="">
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="a-img " href="./CFLH/lienhe.html">
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cart f-right">
+                        <div class="cart-contain">
+                            <a  style="text-decoration: none;">
+                                <div class="visible-index">
+                                    <i class="fa-solid fa-bag-shopping active" id="btn-cart-icon" style="font-size: 25px;"></i>
+                                    <span class="count-item">0</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
+                </d>
             </div>
         </div>
-        <div class="mid-header">
-            <div class="container">
-                <div class="mid-header-row">
-                    <div class="header-nav">
-                        <ul class="nav-left">
-                            <li class="nav-item ">
-                                <a class="a-img active" href="/">
-                                    Trang chủ
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-img " href="">
-                                    Giới thiệu
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-img " href="">
-                                    Sản phẩm
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </a>
-                                <ul class="subnav">
-                                    <li class="subnav-item"><a href="">Cà phê thế giới</a></li>
-                                    <li class="subnav-item"><a href="">Cà phê pha Việt</a></li>
-                                    <li class="subnav-item"><a href="">Cà phê cảm hứng</a></li>
-                                    <li class="subnav-item"><a href="">Đồ uống</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="logo_center">
-                            <li class="logo">
-                                <a href="/" class="logo-wrapper">
-                                    <img src="./assets/img/logo/logo-img.webp" alt="" class="logo-img">
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li class="nav-item">
-                                <a class="a-img " href="">
-                                    Dịch vụ
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-img " href="">
-                                    Tin tức
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-img " href="">
-                                    Liên hệ
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="cart f-right">
-                            <div class="cart-contain">
-                                <a href="" style="text-decoration: none;">
-                                    <div class="visible-index">
-                                        <i class="fa-solid fa-bag-shopping active" style="font-size: 25px;"></i>
-                                        <span class="count-item">0</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </d>
-                </div>
-            </div>
-        </div>
-    </header>  
+    </div>
+</header>  
     `)
 }
 

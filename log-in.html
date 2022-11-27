@@ -36,14 +36,14 @@
                         <h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
                         <span>Bạn đã có tài khoản, vui lòng đăng nhập tại đây</span>
                     </div>
-                    <div class="content-all">
-                        <input type="email" class="input-login" placeholder="Email" required>
+                    <form class="content-all"  onsubmit="login();">
+                        <input id="name" type="text" class="input-login" placeholder="Username" required>
                         <br>
-                        <input type="password" class="input-login" placeholder="Password" required>
-                    </div>
-                    <div class="btn-login">
-                        <button>Đăng nhập</button>
-                    </div>
+                        <input id="password" type="password" class="input-login" placeholder="Password" required>
+                        <div class="btn-login">
+                            <button id="btn-login">Đăng nhập</button>
+                        </div>
+                    </form>
                     <div class="have-ac">
                         <span>Bạn chưa có tài khoản, vui lòng đăng ký <a href="./register.html">tại đây</a></span>
                     </div>

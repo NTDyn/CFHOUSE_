@@ -75,7 +75,7 @@ input[type="password"]:focus {
     margin: 15px;
 }
 
-.btn-register button {
+.btn-register{
     background-color: #fff;
     color: #000;
     width: 566px;
@@ -88,7 +88,7 @@ input[type="password"]:focus {
     
 }
 
-.btn-register button:hover {
+.btn-register:hover{
     border: 1px solid transparent;
     background-color: #e7b45a;
     cursor: pointer;
