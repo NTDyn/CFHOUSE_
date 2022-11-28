@@ -38,3 +38,6 @@ function send(){
     function resetForm(){
         document.getElementsByTagName('form')[0].reset();
     }
+
+    
+   

@@ -319,3 +319,4 @@ $('.btn-pay-bill').click(function(){
           })
     }
 })
+
