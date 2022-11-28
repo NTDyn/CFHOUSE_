@@ -1,0 +1,147 @@
+body {
+    height: 1728px;
+}
+
+.register {
+    padding-top: 200px ;
+}
+
+.register-header{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.register-header a {
+    text-decoration: none;
+}
+
+.register-header p {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.register-header i {
+    font-size: 3px;
+    vertical-align: middle;
+}
+
+.form-register {
+    padding: 40px 50px;
+    text-align: center;
+}
+
+.form-title h1 {
+    font-size:36px;
+    color: #e7b45a;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px ;
+}
+
+.form-title span {
+    font-family: "Oswald", sans-serif;
+    color: #707070;
+}
+
+.content-all {
+    margin-top: 30px;
+}
+
+.input-register {
+    width: 566px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #e7b45a;
+    outline-offset: 0px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-register {
+    margin: 15px;
+}
+
+.btn-register button {
+    background-color: #fff;
+    color: #000;
+    width: 566px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #e7b45a;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.btn-register button:hover {
+    border: 1px solid transparent;
+    background-color: #e7b45a;
+    cursor: pointer;
+    color: #fff;
+}
+
+.have-ac p {
+    color: #707070;
+    font-size: 16px;
+}
+
+.social-register {
+    margin: 40px 0 60px;
+}
+
+.fb-register {
+    background-color: #3b5998;
+}
+
+.gg-register {
+    background-color: #e14b33;
+}
+
+.fb-register,
+.gg-register {
+    display: inline-block;
+    margin-top: 20px;
+    width: 110px;
+    height: 35px;
+}
+
+.fb-register i,
+.gg-register i,
+.fb-register span,
+.gg-register span {
+    float: left;
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.fb-register:hover,
+.gg-register:hover {
+    cursor: pointer;
+}
+
+.footer {
+    position: relative;
+    bottom: 100px;
+    height: 900px;
+}
+
+hr {
+    margin-bottom: 50px;
+}

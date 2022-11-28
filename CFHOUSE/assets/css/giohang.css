@@ -46,6 +46,10 @@ background-color: black;
 .btn-x{
     color: red;
 }
+.btn-x:hover{
+    
+    font-size: 170%;
+}
 
 
 
