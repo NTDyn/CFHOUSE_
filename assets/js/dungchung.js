@@ -43,7 +43,7 @@ function addHeader() {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="a-img " href="">
+                            <a class="a-img ">
                                 Sản phẩm
                                 <i class="fa-solid fa-caret-down"></i>
                             </a>
