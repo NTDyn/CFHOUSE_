@@ -393,4 +393,16 @@ header {
     width: 200px;
     vertical-align: middle;
 }
+.footer{
+    background-image: url("../img/bg_footer.png");
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+}
 
+
+.footer-contact {
+    position: relative;
+    left: 130px;
+    top: 250px;
+}
