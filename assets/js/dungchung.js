@@ -48,10 +48,10 @@ function addHeader() {
                                 <i class="fa-solid fa-caret-down"></i>
                             </a>
                             <ul class="subnav">
-                                <li class="subnav-item"><a href="./CFHOUSE/caphethegioi.html">Cà phê thế giới</a></li>
-                                <li class="subnav-item"><a href="./CFHOUSE/caphephaviet.html">Cà phê pha Việt</a></li>
-                                <li class="subnav-item"><a href="./CFHOUSE/caphecamhung.html">Cà phê cảm hứng</a></li>
-                                <li class="subnav-item"><a href="./CFHOUSE/douong.html">Đồ uống</a></li>
+                                <li class="subnav-item" onclick="location.href='./CFHOUSE/caphethegioi.html' ;">Cà phê thế giới</li>
+                                <li class="subnav-item"  onclick="location.href='./CFHOUSE/caphephaviet.html' ;">Cà phê pha Việt</li>
+                                <li class="subnav-item"  onclick="location.href='./CFHOUSE/caphecamhung.html' ;">Cà phê cảm hứng</li>
+                                <li class="subnav-item"  onclick="location.href='./CFHOUSE/douong.html' ;">Đồ uống</li>
                             </ul>
                         </li>
                     </ul>
