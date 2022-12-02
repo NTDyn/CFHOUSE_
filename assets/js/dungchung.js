@@ -57,7 +57,7 @@ function addHeader() {
                     </ul>
                     <ul class="logo_center">
                         <li class="logo">
-                            <a href="/" class="logo-wrapper">
+                            <a href="../index.html" class="logo-wrapper">
                                 <img src="./assets/img/logo/logo-img.webp" alt="" class="logo-img">
                             </a>
                         </li>
