@@ -481,7 +481,7 @@ width: 100%;
 
 /*Footer*/
 .footer{
-    background-image: url("//bizweb.dktcdn.net/100/346/521/themes/853163/assets/bg_footer.png?1638345885197");
+    background-image: url("../img/bg_footer.png");
     background-repeat: no-repeat;
     position: relative;
     height: 800px;
