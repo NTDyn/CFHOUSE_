@@ -22,6 +22,16 @@ function send(){
         alert("Vui lòng nhập tuổi cần phải là số");
         return;
     }
+    if(age < 18)
+    {
+        alert("Để ứng tuyển bạn phải đủ 18 tuổi!");
+        return;
+    }
+    if (isNaN(cccd)){ //Kiem tra xem age co phai la so hay khong
+        alert("Vui lòng nhập căn cước công dân cần phải là số");
+        return;
+    }
+
 
     var choice = confirm("Thông tin của bạn vừa nhập là\n" + "Tên của bạn: " + name
     + "\n" + "Số CCCD/CMND: " + cccd + "\n" + "Tuổi của bạn: " + age +"\n"
