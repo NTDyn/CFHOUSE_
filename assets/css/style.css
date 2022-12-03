@@ -1010,3 +1010,7 @@ header {
     font-size: 14px;
     letter-spacing: 1.1px
 }
+
+.swal-wide{
+    width: 30%;
+}

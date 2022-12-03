@@ -33,7 +33,7 @@ function addHeader() {
                 <div class="header-nav">
                     <ul class="nav-left">
                         <li class="nav-item ">
-                            <a class="a-img active" href="">
+                            <a class="a-img active" href="./index.html">
                                 Trang chủ
                             </a>
                         </li>
@@ -284,3 +284,5 @@ function logOut() {
     localStorage.removeItem('CurrentUser');
     location.reload();
 }
+
+
